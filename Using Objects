@@ -1,0 +1,2091 @@
+2.1.8: Pizza Instance Variables
+public class PizzaTester
+{
+    public static void main(String[] args)
+    {
+        System.out.println("You should be able to run this");
+        System.out.println("if you added the instance variables correctly");
+        
+    }
+}
+public class Pizza
+{
+    // Add your instance variables here
+    private String Toppings;
+    private String Size;
+}
+
+2.1.9: Phone Skeleton
+/**
+ * 
+ * The phone class represents a cellular phone.
+ * 
+ * Add the instance variables you think a phone would need
+ */ 
+public class Phone
+{
+    // Attributes
+   private String call;
+   private String text;
+    // Methods will go here
+}
+
+
+2.2.6: Using the Rectangle Class
+public class RectangleTester 
+{
+    public static void main(String[] args)
+    {
+        // Create a rectangle with width 5 and height 12
+        
+        // Then print it out
+        Rectangle test = new Rectangle(5, 12);
+        System.out.println(test);
+    }
+}
+public class Rectangle
+{
+    // Attributes
+    private int width;
+    private int height;
+    
+    // Constructor
+    public Rectangle(int rectWidth, int rectHeight)
+    {
+        width = rectWidth;
+        height = rectHeight;
+    }
+    
+    
+    // This method lets us print out the object
+    // to see the values of the instance variables
+    public String toString()
+    {
+        return "Rectangle with width: " + width + " and height: " + height;
+    }
+}
+
+2.2.7: Student GPA Field
+public class StudentTester
+{
+    public static void main(String[] args)
+    {
+        Student alan = new Student("Alan", "Turing", 11, 3.5);
+        Student ada = new Student("Ada", "Lovelace", 12, 3.8);
+        
+        System.out.println(alan);
+        System.out.println(ada);
+    }
+}
+public class Student
+{
+    private String firstName;
+    private String lastName;
+    private int gradeLevel;
+    private double gradePointAverage;
+    // Add GPA instance variable called gpa here.
+    
+    /**
+     * This is a constructor.  A constructor is a method
+     * that creates an object -- it creates an instance
+     * of the class. What that means is it takes the input
+     * parameters and sets the instance variables (or fields)
+     * to the proper values.
+     * 
+     * Check out StudentTester.java for an example of how to use
+     * this constructor and how to add the gpa to the constructor. 
+     */
+    public Student(String fName, String lName, int grade, double gpa)
+    {
+        firstName = fName;
+        lastName = lName;
+        gradeLevel = grade;
+        gradePointAverage = gpa;
+    }
+    
+    /**
+     * This is a toString for the Student class. It returns a String
+     * representation of the object, which includes the fields
+     * in that object.
+     */
+    public String toString()
+    {
+        return firstName + " " + lastName + " is in grade: " + gradeLevel + " and has GPA: " + gradePointAverage;
+    }
+}
+
+2.2.8: Instance Variables for Your Dog
+import java.util.Scanner;
+class DogTester
+{
+   public static void main(String args[])
+   {
+		Scanner input= new Scanner(System.in);
+		String str="";
+		
+		//input string
+		System.out.print("Enter any string: ");
+		str=sc.nextLine();
+
+		//declaring objects to store lowercase and uppercase strings
+		String lowerCaseString="",upperCaseString="";
+
+		//convert into lower case
+		lowerCaseString= str.toLowerCase();  
+		//convert into upper case
+		upperCaseString= str.toUpperCase();  
+
+		//printing the strings
+		System.out.println("Original String: "+str);
+		System.out.println("Lower Case String: "+lowerCaseString);
+		System.out.println("Upper Case String: "+upperCaseString);   
+   }
+}
+import java.util.Scanner;
+class DogTester
+{
+   public static void main(String args[])
+   {
+		Scanner input= new Scanner(System.in);
+		String str="";
+		
+		//input string
+		System.out.print("Enter any string: ");
+		str=sc.nextLine();
+
+		//declaring objects to store lowercase and uppercase strings
+		String lowerCaseString="",upperCaseString="";
+
+		//convert into lower case
+		lowerCaseString= str.toLowerCase();  
+		//convert into upper case
+		upperCaseString= str.toUpperCase();  
+
+		//printing the strings
+		System.out.println("Original String: "+str);
+		System.out.println("Lower Case String: "+lowerCaseString);
+		System.out.println("Upper Case String: "+upperCaseString);   
+   }
+}
+
+2.2.9: Pizza Time!
+public class PizzaTester 
+{
+    public static void main(String[] args)
+    {
+        Pizza pin = new Pizza("cheese", "pizza", 12);
+        System.out.println(pin);
+        Pizza puke = new Pizza("cheese", "anchovies", 12);
+        System.out.println(puke);
+        Pizza pepperoni = new Pizza("cheese", "pepperoni", 12);
+        System.out.println(pepperoni);
+    }
+}
+public class Pizza
+{
+    // Add the instance variables here
+    private int size;
+    private String type;
+    private String top;
+    
+    
+    // Put the constructor here
+    public Pizza(String theType, String theToppings, int theSize)
+    {
+        type = theType;
+        top = theToppings;
+        size = theSize;
+    }
+    
+    
+    // You don't need to do anything with this method
+    // Used to print the object
+    public String toString()
+    {
+        return size + " inch " + type + " pizza with " + top;
+    }
+}
+
+
+2.3.7: Plain Coffee
+public class CoffeeTester
+{
+   public static void main(String[] args)
+   {
+       // Create Specialized Coffee
+       Coffee latte = new Coffee(4, false, "soy");
+       System.out.println(latte);
+       
+       // Create a default coffee
+       // This should work after you create the default
+       // constructor
+       Coffee plain = new Coffee(3, true, "whole");
+       System.out.println(plain);
+       
+   }
+}
+/*
+* This class represents a cup of coffee
+* 
+*/
+public class Coffee
+{
+   // Instance Variables
+   private int brewStrength; // on a scale of 1 to 5, 5 being the darkest
+   private boolean sugar;    // has sugar (true) or does not (false)
+   
+   // takes the values "none", "whole", "nonfat", "soy", or "almond"
+   private String milkType; 
+   
+   // Add a default constructor (no parameters)
+   // to initialize the instance variables
+   // to a default cup of coffee
+       public Coffee()
+   {
+       brewStrength = 3;
+       sugar = true;
+       milkType = "whole";
+   }
+   
+   
+   // Specialized constructor
+   public Coffee(int howStrong, boolean hasSugar, String milk)
+   {
+       brewStrength = howStrong;
+       sugar = hasSugar;
+       milkType = milk;
+   }
+   
+   
+   // String representation to print
+   // Do not modify this function
+   public String toString()
+   {
+       return "Coffee brewed to level " + brewStrength + " with " + milkType + " milk. Sugar? " + sugar;
+   }
+   
+}
+
+2.3.8: Custom Pinatas
+public class PinataTester
+{
+   public static void main(String[] args)
+   {
+       // Make Pinatas!
+       Pinata ella = new Pinata();
+       Pinata pete = new Pinata("chocolate", "blue", "star");
+       Pinata sweetie = new Pinata("sour straws");
+       
+       // Print the pinatas
+       System.out.println(ella);
+       System.out.println(pete);
+       System.out.println(sweetie);
+       
+       
+   }
+}
+public class Pinata
+{
+   // Instance variables
+   private String candy;    // what kind of candy is inside
+   private String color;    
+   private String shape;
+   
+   // Constructor without parameters
+   public Pinata()
+   {
+       candy = "hard candy";
+       color = "rainbow";
+       shape = "donkey";
+   }
+   
+   // Add an overloaded constructor that allows the user
+   // to customize all of the instance variables
+   public Pinata(String candyType, String colorType, String shapeType)
+   {
+       candy = candyType;
+       color = colorType;
+       shape = shapeType;
+   }
+   
+   // Add an overloaded constructor that allows the user
+   // to customize the color and shape
+   public Pinata(String candyType)
+   {
+       candy = candyType;
+       color = "rainbow";
+       shape = "donkey";
+   }
+   
+   // Add an overloaded constructor that allows the user
+   // to customize the candy
+   public Pinata(String colorType, String shapeType)
+   {
+       candy = "hard candy";
+       color = colorType;
+       shape = shapeType;
+   }
+   
+   public String toString()
+   {
+       return color + " " + shape + " pinata filled with " + candy;
+   }
+}
+
+2.3.9: Website Class
+public class WebsiteTester
+{
+   public static void main(String[] args)
+   {
+       // Start here!
+       Website normal = new Website();
+       Website goodSchool = new Website("goodSchool", "edu", 0);
+       Website codehs = new Website("codehs", 1000000);
+       
+       // Print the websites
+       System.out.println(normal);
+       System.out.println(goodSchool);
+       System.out.println(codehs);
+   }
+}
+public class Website
+{
+   // Put your code here
+   private String domain;
+   private String topLevelDomain;
+   private int numUsers;
+   
+   public Website()
+   {
+       domain = "";
+       topLevelDomain = "com";
+       numUsers = 0;
+   }
+   
+   public Website(String domainName, String topDomain)
+   {
+       domain = domainName;
+       topLevelDomain = topDomain;
+       numUsers = 0;
+   }
+       
+       public Website(String domainName, int numPeople)
+   {
+       domain = domainName;
+       topLevelDomain = "com";
+       numUsers = numPeople;
+   }
+   
+   public Website(String domainName, String topDomain, int numPeople)
+   {
+       domain = domainName;
+       topLevelDomain = topDomain;
+       numUsers = numPeople;
+   }
+   
+   
+   
+   // String representation for printing
+   // Do not modify this method
+   public String toString()
+   {
+       String res =  "https://www." + domain + "." + topLevelDomain;
+       res += " has " + numUsers + " users";
+       
+       return res;
+   }
+}
+
+2.3.10: Empty References
+public class RectangleTester
+{
+   public static void main(String[] args)
+   {
+       // Fix this code so there are no more
+       // null pointer exceptions
+       Rectangle brick = new Rectangle(1,1);
+       Rectangle fencePost;
+       
+       fencePost = new Rectangle(1, 3);
+       
+       
+       System.out.println(brick);
+       System.out.println(fencePost);
+       
+       // Change the fencePost dimensions
+       fencePost = new Rectangle(1, 5);
+       System.out.println(fencePost);
+       
+   }
+}
+public class Rectangle
+{
+    // Attributes
+    private int width;
+    private int height;
+    
+    // Constructor
+    // Copies the values of rectWidth and rectHeight
+    // into width and height, respectively
+    public Rectangle(int rectWidth, int rectHeight)
+    {
+        width = rectWidth;
+        height = rectHeight;
+    }
+    
+    // Constructor
+    // Allows user to construct a square
+    // Copies the value of sidelength
+    // into both width and height
+    public Rectangle(int sidelength)
+    {
+        width = sidelength;
+        height = sidelength;
+    }
+    
+    
+    // This method lets us print out the object
+    // to see the values of the instance variables
+    public String toString()
+    {
+        return "Rectangle with width: " + width + " and height: " + height;
+    }
+}
+
+
+2.4.5: Hello!
+import java.util.Scanner;
+
+public class HelloTester
+{
+   public static void main(String[] args)
+   {
+       // Create a Scanner object
+       Scanner input = new Scanner(System.in);
+       System.out.print("Input name: ");
+       
+       Hello name = new Hello("Patrick");
+       
+       name.english();
+       name.french();
+       name.german();
+
+   }
+}
+public class Hello {
+
+    private String name;
+
+    public Hello (String yourName){
+        name = yourName;
+    }
+
+    public void english(){
+        System.out.print("Hello ");
+        System.out.print(name);
+        System.out.println("!");
+    }
+
+    public void spanish(){
+        System.out.print("Hola ");
+        System.out.print(name);
+        System.out.println("!");
+    }
+
+    public void french(){
+        System.out.print("Bonjour ");
+        System.out.print(name);
+        System.out.println("!");
+    }
+
+    public void german(){
+        System.out.print("Hallo ");
+        System.out.print(name);
+        System.out.println("!");
+    }
+
+    public void russian(){
+        System.out.print("Privet ");
+        System.out.print(name);
+        System.out.println("!");
+    }
+
+    public void chinese(){
+        System.out.print("Ni hao ");
+        System.out.print(name);
+        System.out.println("!");
+    }
+}
+
+2.4.6: Loose Change
+public class CoinTester
+{
+   public static void main(String[] args) {
+
+      //Create your program here
+      
+       Coins total = new Coins(4, 3, 2, 1);
+       total.bankCount();
+       total.addQuarter();
+       total.addQuarter();
+       total.addDime();
+       total.addDime();
+       total.addPenny();
+       total.bankCount();
+       total.bankValue();
+      
+      
+   }
+}
+public class Coins {
+
+    private int quarters;
+    private int dimes;
+    private int nickels;
+    private int pennies;
+
+    public Coins(int numQuarters, int numDimes, int numNickels, int numPennies){
+        quarters = numQuarters;
+        dimes = numDimes;
+        nickels = numNickels;
+        pennies = numPennies;
+    }
+
+    public void addQuarter(){
+        System.out.println("Adding a quarter ...");
+        quarters ++;
+    }
+
+    public void addDime(){
+        System.out.println("Adding a dime ...");
+        dimes ++;
+    }
+
+    public void addNickel(){
+        System.out.println("Adding a nickel ...");
+        nickels ++;
+    }
+
+    public void addPenny(){
+        System.out.println("Adding a penny ...");
+        pennies ++;
+    }
+
+    public void quartersCount(){
+        System.out.println(quarters);
+    }
+
+    public void quartersTotal(){
+        System.out.println(quarters * 0.25);
+    }
+
+    public void dimesCount(){
+        System.out.println(dimes);
+    }
+
+    public void dimesTotal(){
+        System.out.println(dimes * 0.10);
+    }
+
+    public void nickelsCount(){
+        System.out.println(nickels);
+    }
+
+    public void nickelsTotal(){
+        System.out.println(nickels * 0.05);
+    }
+
+    public void penniesCount(){
+        System.out.println(pennies);
+    }
+
+    public void penniesTotal(){
+        System.out.println(pennies * 0.01);
+    }
+
+    public void bankValue(){
+        System.out.println(quarters * 0.25 + dimes * 0.10
+                + nickels * 0.05 + pennies * 0.01);
+    }
+
+    public void bankCount(){
+        System.out.println(quarters + dimes + nickels + pennies);
+    }
+}
+
+2.4.7: Chat Bot
+import java.util.Scanner;
+
+public class BotTester
+{
+   public static void main(String[] args) {
+
+       //Put your code here
+       Scanner name = new Scanner(System.in);
+       System.out.println("Hello. What is your name? What's the weather lik");
+       System.out.println("e?");
+       System.out.println("How many feet in a mile?");
+       
+       Bot chatbot = new Bot("Tracy");
+       chatbot.greeting();
+       chatbot.help();
+       chatbot.weather();
+       chatbot.feetInMile();
+       chatbot.goodbye();
+   }
+}
+public class Bot {
+
+    private String name;
+
+    public Bot (String yourName){
+        name = yourName;
+    }
+
+    public void greeting(){
+        System.out.print("Hello ");
+        System.out.print(name);
+        System.out.println("! My name is Hal!");
+        System.out.println("How are you today!");
+    }
+
+    public void help(){
+        System.out.println("You can ask me about the weather,");
+        System.out.println("or how many feet are in a mile.");
+        System.out.println("I can even convert feet to meters!");
+    }
+
+    public void weather(){
+        System.out.println("Its always warm and dry inside your computer!");
+    }
+
+    public void feetInMile() {
+        System.out.println("There are 5280 feet in a mile.");
+    }
+
+    public void goodbye(){
+        System.out.println("It was nice talking with you!");
+        System.out.println("Have a great day!");
+    }
+
+    public void favoriteNumber(int yourNumber){
+        System.out.println("My favorite number is 8.");
+        System.out.print("That is ");
+        System.out.print(yourNumber - 8);
+        System.out.println(" away from your number");
+    }
+
+    public double feetToMeters(double feet){
+        double meters = feet * 0.3048;
+        return meters;
+    }
+
+}
+
+2.4.8: Greetings and Salutations
+public class SalutationsTester
+{
+   public static void main(String[] args)
+   {
+       // Test your class here
+       Salutations name = new Salutations("Bob");
+       name.addressLetter();
+       name.signLetter();
+       name.addressMemo();
+       name.signMemo();
+       
+   }
+}
+public class Salutations
+{
+   // Put your code here
+   private String name;
+   
+   public Salutations(String nameType){
+   name = nameType;
+   }
+
+   public void addressLetter(){
+   System.out.println("Dear " + name);
+   }
+   public void signLetter(){
+   System.out.println("Sincerely,");
+   System.out.println(name);
+   }
+   public void addressMemo(){
+   System.out.println("To whom it may concern");
+   }
+   public void signMemo(){
+   System.out.println("Best,");
+   System.out.println(name);
+   }
+   
+}
+
+
+2.5.5: Using the Point Class
+public class PointTester
+{
+   public static void main(String[] args)
+   {
+       Point p = new Point(10, 5);
+       System.out.println(p);
+       p.move(3, 4);
+       
+       System.out.println(p);
+       
+       // Make a new point here at position (2, 4)
+       
+       Point o = new Point(2,4);
+       System.out.println(o);
+       o.move(5,2);
+       
+       System.out.println(o);
+       // Then print it out
+       
+       // Move the point 5 units in the x direction and
+       // 2 units in the y direction
+       
+       // Print out the point again to see that it moved
+
+   }
+}
+public class Point
+{
+    private int x;
+    private int y;
+    
+    public Point(int xCoord, int yCoord)
+    {
+        x = xCoord;
+        y = yCoord;
+    }
+    
+    public void move(int dx, int dy)
+    {
+        x += dx;
+        y += dy;
+    }
+    
+    public String toString()
+    {
+        return x + ", " + y;
+    }
+}
+
+2.5.7: Basketball Players
+public class PlayerTester
+{
+   public static void main(String[] args) {
+      
+      //Start here
+      BasketballPlayer Lebron = new BasketballPlayer("Lebron James", "Lakers");
+      Lebron.addGame(30, 6);
+      Lebron.addGame(25, 8);
+      Lebron.addGame(20, 2);
+      Lebron.addGame(36, 12);
+      System.out.println("Lebron James Stats:");
+      Lebron.printPPG();
+      Lebron.printAPG();
+      System.out.println(Lebron);
+      System.out.println("");
+      BasketballPlayer Jordan = new BasketballPlayer("Micheal Jordan");
+      Jordan.addGame(14, 14);
+      Jordan.addGame(26, 12);
+      Jordan.addGame(34, 10);
+      Jordan.addGame(40, 13);
+      System.out.println("Michael Jordan Stats:");
+      Jordan.printPPG();
+      Jordan.printAPG();
+      System.out.println(Jordan);
+      
+   }
+}
+public class BasketballPlayer {
+
+    /* This class is complete. Take a look around
+     * to make sure you understand how to use it,
+     * but you do not need to make changes.
+     */
+	private String name;
+	private String team;
+	private int totalPoints;
+    private int totalAssists;
+	private int gamesPlayed;
+
+    public BasketballPlayer(String playerName, String currentTeam) {
+		name = playerName;
+        team = currentTeam;
+		totalPoints = 0;
+		gamesPlayed = 0;
+	}
+
+    public BasketballPlayer(String playerName) {
+        // this() is a shortcut to calling the other constructor
+        // in this class. We will see more of 'this' in a later
+        // unit, but it is shown here as a best practice.
+		this(playerName, "no team");
+	}
+
+	public void addGame(int points, int assists) {
+		totalPoints += points;
+        totalAssists += assists;
+		gamesPlayed ++;
+	}
+
+	public void printPPG() {
+		System.out.print("Points per game: ");
+        System.out.println((double) totalPoints / gamesPlayed);
+	}
+
+    public void printAPG() {
+		System.out.print("Assists per game: ");
+        System.out.println((double) totalAssists / gamesPlayed);
+	}
+
+	public String toString() {
+		return name + " averages " + ((double) totalPoints / gamesPlayed) + " points per game.";
+	}
+}
+
+2.5.8: More Operations
+import java.util.Scanner;
+
+public class CalculatorTester
+{
+   public static void main(String[] args)
+   {
+       // Put your code here
+       // A good place to start is to
+       // create comments like the last exercise
+       // to remind yourself what you need to do
+       Scanner input = new Scanner(System.in);
+       double x;
+       double y;
+       
+       System.out.println("x: ");
+       x = input.nextDouble();
+       System.out.println("y: ");
+       y = input.nextDouble();
+       Calculator calc = new Calculator();
+       
+       calc.sum(x,y);
+       calc.subtract(x,y);
+       calc.multiply(x,y);
+       calc.divide(x,y);
+   }
+}
+public class Calculator
+{
+    // This class does not need instance variables!
+    
+    // Prints the sum of x and y
+    public void sum(double x, double y)
+    {
+        double result = x + y;
+        System.out.print(x);
+        System.out.print(" + ");
+        System.out.print(y);
+        System.out.print(" = ");
+        System.out.println(result);
+        
+    }
+    
+    // Prints the product of x and y
+    public void multiply(double x, double y)
+    {
+        double result = x * y;
+        System.out.print(x);
+        System.out.print(" * ");
+        System.out.print(y);
+        System.out.print(" = ");
+        System.out.println(result);
+        
+    }
+    
+    // Prints the product of x and y
+    public void divide(double x, double y)
+    {
+        double result = x / y;
+        System.out.print(x);
+        System.out.print(" / ");
+        System.out.print(y);
+        System.out.print(" = ");
+        System.out.println(result);
+        
+    }
+    
+    // Prints the product of x and y
+    public void subtract(double x, double y)
+    {
+        double result = x - y;
+        System.out.print(x);
+        System.out.print(" - ");
+        System.out.print(y);
+        System.out.print(" = ");
+        System.out.println(result);
+        
+    }
+}
+
+2.5.9: Chat Bot 2.0
+import java.util.Scanner;
+
+public class Bot2Tester
+{
+   public static void main(String[] args) {
+
+       //Put your code here
+       Scanner input = new Scanner(System.in);
+       String name;
+       String animal;
+       String location;
+       int number;
+       
+       System.out.print("Hello. What is your name? ");
+       name = input.nextLine();
+       
+       Bot2 chat2bot = new Bot2(name);
+       
+       chat2bot.greeting();
+       System.out.println("What is your favorite animal?");
+       animal = input.nextLine();
+       chat2bot.favoriteAnimal(animal);
+       System.out.println("Where do you live?");
+       location = input.nextLine();
+       chat2bot.home(location);
+       System.out.println("What is your favorite number?");
+       number = input.nextInt();
+       chat2bot.favoriteNumber(number);
+       chat2bot.goodbye();
+   }
+}
+public class Bot2 {
+
+    private String name;
+
+    public Bot2 (String yourName){
+        name = yourName;
+    }
+
+    public void greeting(){
+        System.out.print("Hello ");
+        System.out.print(name);
+        System.out.println("! My name is Hal!");
+        System.out.println("How are you today!");
+    }
+
+    public void help(){
+        System.out.println("You can ask me about the weather,");
+        System.out.println("or how many feet are in a mile.");
+        System.out.println("I can even convert feet to meters!");
+    }
+
+    public void weather(){
+        System.out.println("It's always warm and dry inside your computer!");
+    }
+
+    public void feetInMile() {
+        System.out.println("There are 5280 feet in a mile.");
+    }
+
+    public void goodbye(){
+        System.out.println("It was nice talking with you!");
+        System.out.println("Have a great day!");
+    }
+
+    public void favoriteNumber(int yourNumber){
+        System.out.println("My favorite number is 8.");
+        System.out.print("That is ");
+        System.out.print(yourNumber - 8);
+        System.out.println(" away from your number.");
+    }
+
+    public void favoriteAnimal(String yourAnimal){
+        System.out.print("Cool. I also like ");
+        System.out.print(yourAnimal);
+        System.out.println("s.");
+        System.out.println("My favorite animals are dogs. Have you met Karel?");
+    }
+
+    public void home(String location){
+        System.out.print("I heard it is really nice in ");
+        System.out.print(location);
+        System.out.println(".");
+        System.out.println("I live in a cloud, which is actually pretty cool!");
+    }
+
+    public double feetToMeters(double feet){
+        double meters = feet * 0.3048;
+        return meters;
+    }
+
+}
+
+
+2.6.6: Number Games
+public class GamesTester
+{
+   public static void main(String[] args)
+   {
+       NumberGames game = new NumberGames(3);
+       
+       // Double the number
+       // Print it out
+       System.out.println(game.doubleNumber());
+       
+       // Square the number
+       // Print it out
+       System.out.println(game.squareNumber());
+       // Double the number again
+       // Print it out
+       System.out.println(game.doubleNumber());
+       
+       // Get the number and store the value
+       // Print it out to see that getNumber does
+       // not modify the number
+       System.out.println(game.getNumber());
+   }
+}
+public class NumberGames
+{
+    
+    // Keep track of the number
+    private double num;
+    
+    // Constructor
+    public NumberGames(double startingNumber)
+    {
+        num = startingNumber;
+    }
+    
+    // Returns the number
+    public double getNumber()
+    {
+        return num;
+    }
+    
+    // Doubles the number
+    // Returns the doubled number
+    public double doubleNumber()
+    {
+        num *= 2;
+        return num;
+    }
+    
+    // Squares the number
+    // Returns the squared number
+    public double squareNumber()
+    {
+        num *= num;
+        return num;
+    }
+    
+    
+}
+
+2.6.7: Construction Costs
+import java.util.Scanner;
+
+public class ConstructionTester
+{
+   public static void main(String[] args)
+   {
+       // Start here!
+       Scanner input = new Scanner(System.in);
+       double tax;
+       int boards;
+       int windows;
+       
+       System.out.println("Enter the sales tax rate:");
+       tax = input.nextDouble();
+       
+       Construction total = new Construction(8, 11, tax);
+       
+       System.out.println("How many boards do you need?");
+       boards = input.nextInt();
+       System.out.println("How many windows do you need?");
+       windows = input.nextInt();
+       System.out.print("Total: ");
+       System.out.println(total.lumberCost(boards)+total.windowCost(windows));
+       System.out.print("Grand Total: ");
+       System.out.println(total.grandTotal(total.lumberCost(boards)+total.windowCost(windows)));
+       
+       
+       
+       
+   }
+}
+public class Construction
+{
+    
+    private double lumber;  // price per board 
+    private double windows; // price per square inch of window
+    private double taxRate; 
+   
+    
+    public Construction(double lumberCost, double windowCost, double taxes)
+    {
+        lumber = lumberCost;
+        windows = windowCost;
+        taxRate = taxes;
+    }
+    
+    // Computes and returns the cost
+    // of the lumber
+    public double lumberCost(int numBoards)
+    {
+        return lumber * numBoards;   
+    }
+    
+    // Computes and returns the cost of the windows
+    public double windowCost(int numWindows)
+    {
+        return windows * numWindows;   
+    }
+    
+    // Computes the grand total by adding
+    // the tax amount to the total
+    public double grandTotal(double total)
+    {
+        return total * (1 + taxRate);
+    }
+    
+}
+
+2.6.8: How Far Away is ...?
+import java.util.Scanner;
+
+public class HowFarAway
+{
+   public static void main(String[] args)
+   {
+       // your code here.
+        Scanner input = new Scanner(System.in);
+        double longitude1;
+        double latitude1;
+        double longitude2;
+        double latitude2;
+       
+       System.out.println("Enter the latitude of the starting location: ");
+       longitude1 = input.nextDouble();
+       System.out.println("Enter the longitude of the starting location: ");
+       latitude1 = input.nextDouble();
+       GeoLocation start = new GeoLocation(longitude1, latitude1);
+       System.out.println("Enter the latitude of the ending location: ");
+       longitude2 = input.nextDouble();
+       System.out.println("Enter the longitude of the ending location: ");
+       latitude2 = input.nextDouble();
+       GeoLocation end = new GeoLocation(longitude2, latitude2);
+       System.out.print("The distance is ");
+       System.out.print(start.distanceFrom(end));
+       System.out.println(" miles.");
+       
+   }
+}
+/*
+ * This class stores information about a location on Earth.  Locations are
+ * specified using latitude and longitude.  The class includes a method for
+ * computing the distance between two locations.
+ *
+ * This implementation is based off of the example from Stuart Reges at 
+ * the University of Washington.
+ */
+
+public class GeoLocation 
+{
+    // Earth radius in miles
+    public static final double RADIUS = 3963.1676;  
+
+    private double latitude;
+    private double longitude;
+
+    /**
+     * Constructs a geo location object with given latitude and longitude
+     */
+    public GeoLocation(double theLatitude, double theLongitude) 
+    {
+        latitude = theLatitude;
+        longitude = theLongitude;
+    }
+
+    /**
+     * Returns the latitude of this geo location
+     */
+    public double getLatitude() 
+    {
+        return latitude;
+    }
+
+    /**
+     * returns the longitude of this geo location
+     */
+    public double getLongitude() 
+    {
+        return longitude;
+    }
+
+    // returns a string representation of this geo location
+    public String toString() 
+    {
+        return "latitude: " + latitude + ", longitude: " + longitude;
+    }
+
+    // returns the distance in miles between this geo location and the given
+    // other geo location
+    public double distanceFrom(GeoLocation other) 
+    {
+        double lat1 = Math.toRadians(latitude);
+        double long1 = Math.toRadians(longitude);
+        double lat2 = Math.toRadians(other.latitude);
+        double long2 = Math.toRadians(other.longitude);
+        // apply the spherical law of cosines with a triangle composed of the
+        // two locations and the north pole
+        double theCos = Math.sin(lat1) * Math.sin(lat2) +
+            Math.cos(lat1) * Math.cos(lat2) * Math.cos(long1 - long2);
+        double arcLength = Math.acos(theCos);
+        return arcLength * RADIUS;
+    }
+}
+
+
+2.7.7: Pretty Printing Operations
+import java.util.Scanner;
+
+public class CalculatorTester
+{
+   public static void main(String[] args)
+   {
+       // Put your code here
+       // A good place to start is to
+       // create comments to remind yourself
+       // what you need to do
+       Scanner input = new Scanner(System.in);
+       double x;
+       double y;
+       
+       System.out.print("");
+       x = input.nextDouble();
+       System.out.print("");
+       y = input.nextDouble();
+       Calculator calc = new Calculator();
+       
+       calc.sum(x,y);
+       System.out.println(x +" + " + y + " = " + calc.sum(x,y));
+       calc.subtract(x,y);
+       System.out.println(x +" - " + y + " = " + calc.subtract(x,y));
+       calc.multiply(x,y);
+       System.out.println(x +" * " + y + " = " + calc.multiply(x,y));
+       calc.divide(x,y);
+       System.out.println(x +" / " + y + " = " + calc.divide(x,y));
+   }
+}
+public class Calculator
+{
+    // This class does not need instance variables!
+    // Since there are no instance variables,
+    // this class also does not need a constructor.
+    
+    // Java will create an empty constructor for you.
+    
+    // Returns the sum of x and y
+    public double sum(double x, double y)
+    {
+        return x + y;
+        
+    }
+    
+    // Returns the product of x and y
+    public double multiply(double x, double y)
+    {
+        return x * y;
+        
+    }
+    
+    // Returns the quotient x / y
+    public double divide(double x, double y)
+    {
+       return x / y;
+    }
+    
+    // Returns the difference of x - y
+    public double subtract(double x, double y)
+    {
+        return x - y;
+    }
+    
+}
+
+2.7.8: Full Name
+public class FormFillTester
+{
+    public static void main(String[] args)
+    {
+        FormFill filler = new FormFill("Karel", "Dog");
+        filler.setAddress(123, "Cherry Lane", "4B");
+        
+        System.out.println(filler.fullName());
+        System.out.println(filler.streetAddress());
+        
+        System.out.println(filler.creditCardInfo(123456789, 10, 2025));
+        
+    }
+}
+public class FormFill
+{
+   
+   private String fName;
+   private String lName;
+   private int streetNumber;
+   private String streetName;
+   private String aptNumber;
+   
+   // Constructor that sets the first and last name
+   // streetNumber defaults to 0
+   // the others default to an empty String
+   public FormFill(String firstName, String lastName)
+   {
+       fName = firstName;
+       lName = lastName;
+   }
+   
+   // Sets streetNumber, streetName, and aptNumber to the given
+   // values
+   public void setAddress(int number, String street, String apt)
+   {
+       streetNumber = number;
+       streetName = street;
+       aptNumber = apt;
+   }
+   
+   // Returns a string with the name formatted like
+   // a doctor would write the name on a file
+   //
+   // Return string should be formatted
+   // with the last name, then a comma and space, then the first name.
+   // For example: LastName, FirstName
+   public String fullName()
+   {
+       return lName + ", " + fName;
+   }
+   
+   // Returns the formatted address
+   // Formatted like this
+   //
+   // StreetNumber StreetName
+   // Apt AptNumber
+   //
+   // You will need to use the escape character \n
+   // To create a new line in the String
+   public String streetAddress()
+   {
+       return streetNumber + " " + streetName + "\nApt " + aptNumber ;
+   }
+   
+   // Returns a string with the credit card information
+   // Formatted like this:
+   //
+   // Card Number: Card#
+   // Expires: expMonth/expYear
+   //
+   // Take information as parameters so we don't store sensitive information!
+   // You will need to use the escape character \n
+   public String creditCardInfo(int creditCardNumber, int expMonth, int expYear)
+   {
+       return "Card Number: " + creditCardNumber + "\nExpires: " + expMonth + "/" + expYear;  
+   }
+   
+}
+
+2.7.9: QuoteMachine
+import java.util.Scanner;
+
+public class QuoteMachine
+{
+   
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       
+       String quote;
+       String author;
+       
+       
+       // Ask for a quote
+       // Ask for the author
+       System.out.println("Enter a quote: ");
+       quote = input.nextLine();
+       System.out.println("Enter the author of the quote: ");
+       author = input.nextLine();
+       // Create a new String that has the quote in quotation marks
+       // Don't forget to escape the quotation marks
+       System.out.println("\"" + quote + "\"" + "\n" + author);
+       // Print the quote, then the author on the next line
+       // But you can only use ONE print statement!
+   }
+}
+
+
+2.8.6: Speaking
+import java.util.Scanner;
+
+public class TalkerTester
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       
+       System.out.println("Enter some text: ");
+       String words = input.nextLine();
+       
+       
+       Talker talky = new Talker(words); 
+       String yelling = talky.yell();
+       String whispers = talky.whisper();
+       
+       System.out.println(talky);
+       System.out.println("Yelling: " + yelling);
+       System.out.println("Whispering: " + whispers);
+       
+   }
+}
+public class Talker
+{
+   private String text;
+   private String upperCase;
+   private String lowerCase;
+   
+   // Constructor
+   public Talker(String startingText)
+   {
+       text = startingText;
+   }
+   
+   // Returns the text in all uppercase letters
+   // Find a method in the JavaDocs that
+   // will allow you to do this with just
+   // one method call
+   public String yell()
+   {
+       return upperCase = text.toUpperCase();
+   }
+   
+   // Returns the text in all lowercase letters
+   // Find a method in the JavaDocs that
+   // will allow you to do this with just
+   // one method call
+   public String whisper()
+   {
+       return lowerCase = text.toLowerCase();
+   }
+   
+   // Reset the instance variable to the new text
+   public void setText(String newText)
+   {
+       text = newText;
+   }
+   
+   // Returns a String representatin of this object
+   // The returned String should look like
+   // 
+   // I say, "text"
+   // 
+   // The quotes should appear in the String
+   // text should be the value of the instance variable
+   public String toString()
+   {
+       return "I say, \"" + text + "\"";
+   }
+}
+
+2.8.7: toString for Flowers
+public class FlowerTester
+{
+    public static void main(String[] args)
+    {
+       Flower foxglove = new Flower("Foxglove", "Red", "Digitalis", "obscura");
+        System.out.println(foxglove);
+    }
+}
+public class Flower
+{
+
+    private String name;
+    private String color;
+    private String genus;
+    private String species;
+
+    public Flower(String theName, String theColor, String theGenus, String theSpecies)
+    {
+        name = theName;
+        color = theColor;
+        genus = theGenus;
+        species = theSpecies;
+    }
+    
+    public String toString()
+    {
+        return color + " " + name + " " + "(" + genus + " " + species + ")";
+    }
+}
+
+2.8.8: Organizing Files
+import java.util.Scanner;
+
+public class FilerTester
+{
+    public static void main(String[] args)
+    {
+        Filer files = new Filer("hippo");
+        
+        String word = "zebra";
+        
+        System.out.println(files.getWord() + " comes before " + word + "?");
+        System.out.println(files.comesBefore(word));
+        System.out.println(files.getWord() + " comes after " + word + "?");
+        System.out.println(files.comesAfter(word));
+        System.out.println(files.getWord() + " is equal to  " + word + "?");
+        System.out.println(files.isEqual(word));
+        
+        
+        // Notice that the capitalization matters
+        word = "Hippo";
+        System.out.println("\n\n");
+        System.out.println(files.getWord() + " comes before " + word + "?");
+        System.out.println(files.comesBefore(word));
+        System.out.println(files.getWord() + " comes after " + word + "?");
+        System.out.println(files.comesAfter(word));
+        System.out.println(files.getWord() + " is equal to  " + word + "?");
+        System.out.println(files.isEqual(word));
+        
+        
+        
+        System.out.println("\n\n");
+        System.out.print("Enter a word: ");
+        Scanner input = new Scanner(System.in);
+        word = input.nextLine();
+        System.out.println(files.getWord() + " comes before " + word + "?");
+        System.out.println(files.comesBefore(word));
+        System.out.println(files.getWord() + " comes after " + word + "?");
+        System.out.println(files.comesAfter(word));
+        System.out.println(files.getWord() + " is equal to  " + word + "?");
+        System.out.println(files.isEqual(word));
+
+    }
+}
+public class Filer
+{
+    private String word;
+    
+    public Filer(String theWord)
+    {
+        word = theWord;
+    }
+    
+    // Returns the word
+    public String getWord()
+    {
+        return word;
+    }
+    
+    // Returns true if word comes
+    // before otherWord.
+    // Returns false otherwise.
+    public boolean comesBefore(String otherWord)
+    {
+        int one = word.compareTo(otherWord);
+        boolean one1;
+        if(one < 0)
+        {
+            one1 = true;
+        }
+        else
+        {
+            one1 = false;
+        }
+        return one1;
+    }
+    
+    
+    // Returns true if word comes
+    // after otherWord.
+    // Returns false otherwise.
+    public boolean comesAfter(String otherWord)
+    {
+        int one = word.compareTo(otherWord);
+        boolean one1;
+        if(one > 0)
+        {
+            one1 = true;
+        }
+        else
+        {
+            one1 = false;
+        }
+        return one1;
+    }
+    
+    
+    // Returns true if word is equal to otherWord.
+    // Returns false otherwise.
+    public boolean isEqual(String otherWord)
+    {
+        boolean equal = word.equals(otherWord);
+        return equal;
+    }
+    
+    
+}
+
+2.8.9: Concatenating Fractions
+import java.util.Scanner;
+
+public class FractionTester
+{
+    public static void main(String[] args)
+    {
+        // Create objects
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter two doubles");
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
+        Fraction c = new Fraction(num1, num2);
+        int finalNum = c.getNumerator();
+        int finalDenom = c.getDenominator();
+        System.out.println("1/2 + " + c + " = " + finalNum + "/" + finalDenom);
+    }
+}
+public class Fraction
+{
+    private int numerator;
+    private int denominator;
+    private int numerator1 = 1;
+    private int denominator1 = 2;
+    
+    public Fraction(int numer, int denom)
+    {
+        numerator = numer;
+        denominator = denom;
+    }
+    
+    // Returns the numerator
+    public int getNumerator()
+    {
+        int finalNum = numerator1 * denominator + numerator * denominator1;
+        return finalNum;
+    }
+    
+    // Returns the denominator
+    public int getDenominator()
+    {
+        int finalDem = denominator * denominator1;
+        return finalDem;
+    }
+    
+    
+    // Returns a string representing a fraction
+    // in the form
+    // numerator/denominator
+    public String toString()
+    {
+        String fraction = numerator + "/" + denominator;
+        return fraction;
+    }
+    
+    
+}
+
+2.8.10: Word Games
+import java.util.Scanner;
+
+public class WordGameTester
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a word: ");
+        // Ask for a word
+        String word = input.nextLine();
+        WordGames newWord = new WordGames(word);
+        // Scramble it
+        String word1 = newWord.scramble();
+        // Print out scrambled word
+        System.out.println(word1);
+        
+        // Ask for an index
+        // Ask for random word
+        System.out.println("Enter an integer: ");
+        int idx = input.nextInt();
+        input.nextLine();  // skip over the newline
+        System.out.println("Enter another word: ");
+        String word2 = input.nextLine();
+        String word3 = newWord.bananaSplit(idx, word2);
+        // Add random word at index
+        // Print out the word
+        System.out.println(word3);
+        
+        
+        // Ask for a character (store as a String)
+        // Ask for random word
+        // Add random word at character
+        // Print out the word
+        System.out.println("Enter an character: ");
+        String iChar = input.nextLine();
+        input.nextLine();  // skip over the newline
+        System.out.println("Enter another word: ");
+        String word4 = input.nextLine();
+        String word5 = newWord.bananaSplit(iChar, word4);
+        // Add random word at index
+        // Print out the word
+        System.out.println(word5);
+        
+        System.out.println(newWord);
+        
+    }
+}
+public class WordGames
+{
+    private String word;
+    
+    public WordGames(String text)
+    {
+        word = text;
+    }
+    
+    public String scramble()
+    {
+        // switch first half
+        // and second half
+        int wordL = word.length();
+        String wordp1 = word.substring(0, wordL/2);
+        String wordp2 = word.substring(wordL/2, wordL);
+        String scram = wordp2 + wordp1;
+        return scram;
+    }
+    
+    
+    public String bananaSplit(int insertIdx, String insertText)
+    {
+        // Insert insertText at the position
+        // insertIdx
+        int wordL = word.length();
+        String wordp1 = word.substring(0, insertIdx);
+        String wordp2 = word.substring(insertIdx, wordL);
+        String all = wordp1 + insertText + wordp2;
+        return all;
+    }
+    
+    
+    public String bananaSplit(String insertChar, String insertText)
+    {
+        // Insert insertText after the first
+        // occurence of the insertChar
+        int wordL = word.length();
+        int iChar = word.indexOf(insertChar);
+        String wordp1 = word.substring(0, iChar);
+        String wordp2 = word.substring(iChar, wordL);
+        String all = wordp1 + insertText + wordp2;
+        return all;
+        
+    }
+    
+    public String toString()
+    {
+        // Games[word]
+        String word1 = "[" + word + "]";
+        return word1;
+    }
+}
+
+
+2.9.6: Order Up!
+import java.util.Scanner;
+
+public class PickupWindow
+{
+    public static void main(String[] args)
+    {
+        // Create scanner object
+        Scanner input = new Scanner(System.in);
+        
+        // Display menu
+        String menu = "1. Hamburger\n2. Cheeseburger\n3. Veggie Burger\n4. Nachos\n5. Hot Dog\n";
+        
+        System.out.println(menu);
+        
+        // Get customer order
+        System.out.println("Enter label: ");
+        String customerOrder = input.nextLine();
+        
+        // Use substring to get the first character (the number)
+        String combo = customerOrder.substring(0,1);
+        
+        // Create an Integer object by using the static
+        // method Integer.valueOf(someString)
+        // to turn the string into an Integer
+        
+        Integer comboNumber =  Integer.valueOf(combo);
+        
+        // Print out what the customer ordered
+        System.out.println("Customer ordered number " + comboNumber);
+        
+        
+    }
+}
+
+2.9.7: Currency
+public class CurrencyTester
+{
+    public static void main(String[] args)
+    {
+        Currency bankRoll = new Currency(12.45);
+        
+        System.out.println("Value of bankroll: " + bankRoll);
+        System.out.println("Dollars: " + bankRoll.getDollars());
+        System.out.println("Cents: " + bankRoll.getCents());
+        
+        
+        bankRoll.setValue(20.56);
+        System.out.println("Value of bankroll: " + bankRoll);
+        System.out.println("Dollars: " + bankRoll.getDollars());
+        System.out.println("Cents: " + bankRoll.getCents());
+        
+        bankRoll.setValue(67.78);
+        System.out.println("Value of bankroll: " + bankRoll);
+        System.out.println("Dollars: " + bankRoll.getDollars());
+        System.out.println("Cents: " + bankRoll.getCents());
+        
+        
+    }
+}
+public class Currency
+{
+    private Double value;
+    
+    // Constructor
+    public Currency(Double startValue)
+    {
+        value = startValue;
+    }
+    
+    // Sets value to newValue
+    public void setValue(Double newValue)
+    {
+        value = newValue;
+    }
+    
+    // Returns the dollar portion of value
+    // if value is 12.34, returns 12
+    public Integer getDollars()
+    {
+        int dollarCount = (int) value.doubleValue();
+        return dollarCount;
+    }
+    
+    // Returns the cents portion of value
+    // as an Integer
+    // if value is 12.34, returns 34
+    public Integer getCents()
+    {
+        int cents = (int) (value*100) % 100;
+        return cents;
+    }
+    
+    // Returns a String representation
+    // in the format
+    // $12.34
+    public String toString()
+    {
+        String finalD = ("$" + getDollars() + "." + getCents());
+        return finalD;
+    }
+}
+
+2.9.8: Guess the number!
+import java.util.Scanner;
+import java.lang.*;
+
+public class ExtremeMain
+{
+    public static void main(String[] args)
+    {
+        // Create a Scanner object
+        Scanner input = new Scanner(System.in);
+        // Create an Extremes object
+        Extremes ob = new Extremes();
+        // Ask the user to guess the maximum value of an Integer
+        System.out.println("Guess the maximum Integer value: ");
+        // Compute and display the difference
+        // between the max and the guess
+        int num1 = input.nextInt();
+        int dif1 = ob.maxDiff(num1);
+        System.out.println("You were off by " + dif1);
+        // Ask the user to guess the minimum value of an Integer
+        System.out.println("Guess the minimum Integer value: ");
+        // Compute and display the difference 
+        // between the min and the guess
+        int num2 = input.nextInt();
+        int dif2 = ob.minDiff(num2);
+        System.out.println("You were off by " + dif2);
+    }
+}
+public class Extremes
+{
+    Integer min;
+    Integer max;
+    
+    // Constructor
+    public Extremes()
+    {
+        //Set min and max values
+        min = Integer.MIN_VALUE;
+        max = Integer.MAX_VALUE;
+    }
+    
+    // Returns the difference
+    // max - number
+    public Integer maxDiff(Integer number)
+    {
+        int dif = max - number;
+        return dif;
+    }
+
+    // Returns the difference
+    // min - number
+    public Integer minDiff(Integer number)
+    {
+        int dif = min - number;
+        return dif;
+    }
+    
+    // Returns a String representation
+    // in the form
+    // [min, max]
+    public String toString()
+    {
+        return "[" + min + ", " + max + "]";   
+    }
+}
+
+
+2.10.6: Circle Area
+public class CircleTester 
+{
+    public static void main(String[] args)
+    {
+        Circle cup = new Circle(5);
+        System.out.println("Area of a circle with radius 5: " + cup.getArea());   
+        System.out.println("Circumference of a circle with radius 5: " + cup.getCircumference());   
+
+        Circle hat = new Circle(12);
+        System.out.println("\nArea of a circle with radius 12: " + hat.getArea());   
+        System.out.println("Circumference of a circle with radius 12: " + hat.getCircumference());   
+
+    }
+}
+public class Circle
+{
+   private double radius;
+   
+   public Circle(double theRadius)
+   {
+       radius = theRadius;
+   }
+
+   // Implement getArea using
+   // Math.PI and
+   // Math.pow
+   // Area = pi * r^2
+   public double getArea()
+   {
+       return Math.PI * Math.pow(radius, 2);
+   }
+   
+   // Implement getCircumference using
+   // Math.PI
+   // Circumference = 2 * PI * r
+   public double getCircumference()
+   {
+       return 2 * Math.PI * radius;
+   }
+   
+}
+
+2.10.7: The Unit Circle
+public class UnitCircle 
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Radians: (cos, sin)");
+        double num1 = 0.0;
+        double num2 = Math.PI/2;
+        double num3 = Math.PI;
+        double cos1 = Math.cos(num1);
+        cos1 = Math.round(cos1 * 100) / 100;
+        double sin1 = Math.sin(num1);
+        sin1 = Math.round(sin1 * 100) / 100;
+        System.out.println(num1 + ": " + cos1 + ", " + sin1);
+        
+        
+        double cos2 = Math.cos(num2);
+        cos2 = Math.round(cos2 * 100) / 100;
+        double sin2 = Math.sin(num2);
+        sin2 = Math.round(sin2 * 100) / 100;
+        System.out.println(num2 + ": " + cos2 + ", " + sin2);
+        
+        
+        double cos3 = Math.cos(num3);
+        cos3 = Math.round(cos3 * 100) / 100;
+        double sin3 = Math.sin(num3);
+        sin3 = Math.round(sin3 * 100) / 100;
+        System.out.println(num3 + ": " + cos3 + ", " + sin3);
+    }
+}
+
+2.10.8: Racing
+public class RaceMain
+{
+    public static void main(String[] args)
+    {
+        // Length of the course in meters
+        double distance = 2414; // ~ 1.5 miles
+        // Generate a random acceleration for each car
+        double accel1 = Math.random() * 1000;
+        double accel2 = Math.random() * 1000;
+        // Create two Racecar objects
+        Racecar car1 = new Racecar(accel1, "Ryan");
+        Racecar car2 = new Racecar(accel2, "Freddy");
+        // Compute the finishing times for both cars
+        double race1 = car1.computeTime(distance);
+        double race2 = car2.computeTime(distance);
+        // Print times of each car
+        System.out.println("Ryan finished in " + race1 + " seconds");
+        System.out.println("Freddy finished in " + race2 + " seconds");
+    }
+}
+public class Racecar
+{
+    private double accel; // acceleration
+    private String name; // name of driver
+    
+    public Racecar(double acceleration, String driver)
+    {
+        accel = acceleration;
+        name = driver;
+    }
+    
+    // Returns the time it takes the racecar
+    // to complete the track
+    public double computeTime(double distance)
+    {
+        double t = Math.sqrt(2 * distance / accel);
+        t = Math.round(t * 100);
+        t /= 100;
+        return t;
+    }
+    
+    public String toString()
+    {
+        return "Racer " + name;
+    }
+}
