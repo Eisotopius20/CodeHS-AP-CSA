@@ -1,0 +1,450 @@
+1.2.5 Welcome Program
+public class Welcome 
+{
+    public static void main(String[] args)
+    {
+        System.out.println("My name is Patrick");
+        System.out.println("I like flying");
+    } 
+}
+
+1.2.6 ASCII Art
+public class Art 
+{
+    public static void main(String[] args)
+    {
+       System.out.println("   /)___");
+       System.out.println("  /     O|___");
+       System.out.println(" /           )");
+       System.out.println("/       )___/");
+    }
+
+}
+
+1.2.7 Fixing a Paragraph
+public class TomatoEssay
+{
+    public static void main(String[] args)
+    {
+        // Start here!
+        System.out.println("Is a tomato a fruit or a vegetable?");
+        System.out.print("While biologically speaking a tomato");
+        System.out.println(" is a fruit, legally speaking it is a vegetable!");
+        System.out.print("In Supreme Court Case Nix v. Hedden, the Court");
+        System.out.print(" ruled that tomatoes should be classified as a vegetable");
+        System.out.print(" under U.S Customs regulations because they are consumed");
+        System.out.println(" more like a vegetable than a fruit, and should be taxed as such.");
+        System.out.print("When tomatos are shipped into the U.S, they are now taxed as vegetables");
+        System.out.println(" even though their anatomy suggests otherwise.");
+    }
+}
+
+1.2.8 Heating Up
+public class MakingPopcorn
+{
+    public static void main(String[] args)
+    {
+        System.out.println("3 Ways to Heat Anything");
+        System.out.println("Each of the 3 methods below is an example of the three ways that heat can be transferred.");
+        System.out.println("");
+        System.out.println("Conduction");
+        System.out.println("Conduction is heat transfer through matter. Metals conduct heat well, but air does not. This is a direct contact type of heat transfer.");
+        System.out.println("");
+        System.out.println("Convection");
+        System.out.println("Convection is heat transfer by the movement of mass from one place to another. It can take place only in liquids and gases. Heat gained by conduction or radiation is moved by convection.");
+        System.out.println("");
+        System.out.println("Radiation");
+        System.out.println("Radiation can transfer heat through the relative emptiness of space. All other forms of heat transfer require motion of molecules like air or water to move heat.");
+    }
+}
+
+1.2.9 Personal Timeline
+public class Timeline
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Age     | M/YY - Description");
+        System.out.println("7       | 7/07 - First trip to Disney World");
+        System.out.println("        |  ");
+        System.out.println("        |  ");
+        System.out.println("        |  ");
+        System.out.println("9       |  ");
+        System.out.println("        | ");
+        System.out.println("        |  2/10 - Attended the Olympics in Vancouver");
+        System.out.println("        |  ");
+        System.out.println("11      |  7/11 - Attended first ");
+        System.out.println("        |  ");
+        System.out.println("        |  ");
+        System.out.println("        |  ");
+        System.out.println("13      |  ");
+        System.out.println("        |  9/13 - Started job making doughnuts");
+        System.out.println("        |  ");
+        System.out.println("        |  ");
+        System.out.println("15      |  ");
+        System.out.println("        |  9/15 - Started high school");
+        System.out.println("        |  ");
+        System.out.println("        |  ");
+        System.out.println("17      |  3/19 - Got liecence");
+    }
+}
+
+
+1.3.5: Our First Integer
+public class Variables
+{
+    public static void main(String[] args)
+    {
+        int snapchatsSent = 2019;
+        System.out.print("The current year is  ");
+        System.out.println(snapchatsSent);
+    }
+}
+
+1.3.8: Answering Questions
+public class Variables 
+{
+    public static void main(String[] args)
+    {
+        String myName = "Karel the Dog";
+        int luckyNumber = 11;
+        double currentTemperature = 75.3;
+        boolean isStudent = true;
+        
+        System.out.println(myName);
+        System.out.println(luckyNumber);
+        System.out.println(currentTemperature);
+        System.out.println(isStudent);
+    }
+}
+
+1.3.9: Team Rankings
+public class TeamRanks
+{
+    public static void main(String[] args) {
+		String team1 = "Alabama";
+		String team2 = "Ohio State";
+		String team3 = "Florida State";
+		String team4 = "USC";
+		String team5 = "Clemson";
+		String team6 = "Penn State";
+		String team7 = "Oklahoma";
+		String team8 = "Maryland";
+		String team9 = "Wisconsin";
+		String team10 = "Michigan";
+		/*
+		 * Don't edit above this line.
+		 * Enter your code below this comment.
+		 */
+        String temp = team5; // team4 = "A", team5 = "OSU", temp = "OSU" 
+        team5 = team4;       // team4 = "A", team5 = "A", temp = "OSU" 
+        team4 = temp;        // team4 = "OSU", team5 = "A", temp = "OSU"
+
+
+		
+		/*
+		 * Don't edit below this line.
+		 * Enter your code above this comment.
+		 */
+
+		System.out.print("1. ");
+		System.out.println(team1);
+		System.out.print("2. ");
+		System.out.println(team2);
+		System.out.print("3. ");
+		System.out.println(team3);
+		System.out.print("4. ");
+		System.out.println(team4);
+		System.out.print("5. ");
+		System.out.println(team5);
+		System.out.print("6. ");
+		System.out.println(team6);
+		System.out.print("7. ");
+		System.out.println(team7);
+		System.out.print("8. ");
+		System.out.println(team8);
+		System.out.print("9. ");
+		System.out.println(team9);
+		System.out.print("10. ");
+		System.out.println(team10);
+	}
+}
+
+
+1.4.6: Weight of a Pyramid
+public class Pyramid 
+{
+    public static void main(String[] args)
+    {
+        int numBlocks = 2500000;
+        double blockWieght = 2.5;
+        
+        double pyramidWieght = numBlocks * blockWieght;
+        
+        System.out.print("The pyramid weighs ");
+        System.out.print(pyramidWieght);
+        System.out.print(" tons");
+    }
+}
+
+1.4.7: Add Fractions
+public class AddFractions 
+{
+   public static void main(String[] args)
+   {
+       int a = 1;
+       int b = 2;
+       int c = 2;
+       int d = 5;
+       
+       System.out.println("The numerator of the first fraction is 1");
+       System.out.println("The numerator of the first fraction is 2");
+       System.out.println("The numerator of the first fraction is 2");
+       System.out.println("The numerator of the first fraction is 5");
+       
+       int numerator = (a * d) + (b * c);
+       int denominator = b * d;
+       
+       System.out.print("The sum of ");
+       System.out.print(a);
+       System.out.print("/");
+       System.out.print(b);
+       System.out.print(" + ");
+       System.out.print(c);
+       System.out.print("/");
+       System.out.print(d);
+       System.out.print(" = ");
+       System.out.print(a*d + b*c);
+       System.out.print("/");
+       System.out.print(b*d);
+       
+       
+   }
+}
+
+1.4.8: Freely Falling Bodies
+public class FallingBodies
+{
+    public static void main(String[] args)
+    {
+        double height = .5 * 9.8 * 10 * 10;
+        double velocity = 9.8 * 10;
+        
+        System.out.print("height is ");
+        System.out.println(height);
+        System.out.print("velocity is ");
+        System.out.println(velocity);
+    }
+}
+
+
+1.5.5: Work Shift
+public class WorkShift
+{
+    public static void main(String[] args)
+    {
+        int hours = 20;
+        int minutes = 42;
+        int seconds = 16;
+        
+        hours *=60;
+        hours *=60;
+        
+        minutes *=60;
+        
+        seconds += hours + minutes;
+        
+        System.out.print(seconds);
+        System.out.print(" seconds");
+    }
+}
+
+1.5.6: My Age
+public class MyAge
+{
+    public static void main(String[] args)
+    {
+        int age = 14;
+        
+        System.out.print("My current age is: ");
+        System.out.println(age);
+        age++;
+        System.out.print("My age next year will be: ");
+        System.out.println(age);
+        age--;
+        System.out.print("My current age is: ");
+        System.out.println(age);
+    }
+}
+
+
+1.6.4: My Age (User Input)
+import java.util.Scanner;
+
+public class MyAge
+{
+    public static void main(String args[]) 
+    {
+        int age;
+        Scanner input= new Scanner(System.in);
+        System.out.print("Input age: ");
+        age = input.nextInt();
+        System.out.print("My current age: ");
+        System.out.println(age);
+        age++;
+        System.out.print("My age next year will be: ");
+        System.out.println(age);
+        age--;
+        System.out.print("My current age is: ");
+        System.out.println(age);
+    }
+}
+
+1.6.5: Night Out
+import java.util.*;
+
+public class NightOut
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       double dinnercost;
+       double minigolfcost;
+       double dessertcost;
+       
+       System.out.println("How much did dinner cost?");
+       dinnercost = input.nextDouble();
+       System.out.println("How much is mini-golf for one person");
+       minigolfcost = input.nextDouble();
+       System.out.println("How much did dessert cost");
+       dessertcost = input.nextDouble();
+       System.out.print("Dinner: ");
+       System.out.println(dinnercost);
+       System.out.print("Mini-Golf: ");
+       System.out.println(minigolfcost);
+       System.out.print("Dessert: ");
+       System.out.println(dessertcost);
+       minigolfcost *= 2;
+       double grandtotal = dinnercost + minigolfcost + dessertcost;
+       System.out.print("Grand Total: ");
+       System.out.println(grandtotal);
+
+   }
+}
+
+1.6.6: MLA Citation
+import java.util.Scanner;
+
+public class Citation
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       
+       String Authorname;
+       String Booktitle;
+       String Publisher;
+       int Year;
+       
+       System.out.println("Enter the author's name as 'Last name, First name': ");
+       Authorname = input.nextLine();
+       System.out.println("Enter the title of the book: ");
+       Booktitle = input.nextLine();
+       System.out.println("Enter the publisher of the book: ");
+       Publisher = input.nextLine();
+       System.out.println("Enter the year the book was published: ");
+       Year = input.nextInt();
+       
+       System.out.print(Authorname);
+       System.out.print(". ");
+       System.out.print(Booktitle);
+       System.out.println(".");
+       System.out.print(Publisher);
+       System.out.print(", ");
+       System.out.print(Year);
+       System.out.println(".");
+       
+       
+   }
+}
+
+
+1.7.4: Casting to an Int
+import java.util.Scanner;
+
+public class CastingToInt
+{
+   public static void main(String[] args)
+   {
+       
+       Scanner input = new Scanner(System.in);
+       
+       double myDouble;
+       int newDouble;
+       
+       System.out.println("Type a decimal number: ");
+       myDouble = input.nextDouble();
+       newDouble = (int) myDouble;
+       System.out.println(newDouble);
+   }
+}
+
+1.7.5: Casting to a Double
+import java.util.Scanner;
+
+public class CastingToDouble
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       
+       int firstInt;
+       int secondInt;
+       double solution;
+
+       System.out.print("First int: ");
+       firstInt = input.nextInt();
+       System.out.print("Second int: ");
+       secondInt = input.nextInt();
+       solution = firstInt / (double) secondInt;
+       System.out.print(solution);
+
+   }
+}
+
+1.7.8: Movie Ratings
+import java.util.Scanner;
+
+public class MovieRatings
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       
+       double movieRating;
+       int movieRatingRounded;
+
+       System.out.println("Enter movie rating (as a decimal)");
+       movieRating = input.nextDouble();
+       movieRating += 0.5;
+       movieRatingRounded = (int) movieRating;
+       System.out.print("Rating rounded: ");
+       System.out.print(movieRatingRounded);
+       
+   }
+}
+
+1.7.11: Integer Overflow
+public class IntegerOverflow
+{
+   public static void main(String[] args)
+   {
+       System.out.println(Integer.MIN_VALUE);
+       System.out.println(Integer.MAX_VALUE);
+       System.out.println(Integer.MIN_VALUE - 1);
+       System.out.println(Integer.MAX_VALUE + 1);
+       /* The program prints the values anyway even though they are
+       above/below the max/min values */
+       //It prints 2147483647 and -2147483648 I guess its suporising 
+       //because when you subtract one from the min it becomes the max
+   }
+}
